@@ -35,18 +35,18 @@ class App extends Component {
         <header>
           <h1>Rich Man's Reddit </h1>
           <h2>What view would you like?: {' '}
-              {/* <Link to="/Grid">Grid View </Link>{' '} */}
+              <Link to="/Grid">Grid View </Link>{' '}
               <Link to="/List">List View</Link></h2>
         </header>
         <List />
 
       <div>
         <Switch>
-          {/* <Route path = "/Grid" render= {() => ( */}
-              {/* <div className="Grid1">
+          <Route path = "/Grid" render= {() => (
+              <div className="Grid1">
                 {postGridItems}
               </div>
-          )}/> */}
+          )}/>
 
           <Route path = "/List" render ={() => (
               <div className = "list">

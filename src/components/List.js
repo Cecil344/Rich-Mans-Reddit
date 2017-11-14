@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import RedditData from '../reducers';
 import { connect } from 'react-redux';
 
 
@@ -11,9 +10,9 @@ class List extends Component {
             <article>
                 <section>
 
-                        {/* <h3> {this.props.post.title}</h3>
-                        <img src={this.props.post.thumbnail} />
-                        <a href={this.props.post.url}>Click here</a> */}
+                        {/* <h3> {this.props.post.title}</h3> */}
+                        {/* <img src={this.props.post.thumbnail} /> */}
+                        {/* <a href={this.props.post.url}>Click here</a> */}
                         <p>Hi</p>
                 </section>
             </article>
@@ -26,7 +25,7 @@ class List extends Component {
 function mapStateToProps(state) {
     return {
         posts: state.posts
-    }
+    };
 }
 
 export default connect(mapStateToProps)(List);
