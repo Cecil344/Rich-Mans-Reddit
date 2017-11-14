@@ -1,4 +1,4 @@
-import RedditData from "./RedditData"
+import RedditData from './RedditData';
 
 const INITIAL_STATE = {
   posts: RedditData

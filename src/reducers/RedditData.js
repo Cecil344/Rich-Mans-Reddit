@@ -155,18 +155,3 @@ export default [{
   title: "For my first post, I introduce to you Paco The Taco",
   url: "https://i.redd.it/ubznk9dp50xz.jpg"
 }];
-
-/* Source...
-$.get("https://www.reddit.com/r/aww.json", function(data) {
-
-  var json = data.data.children.map(post => ({
-    title: post.data.title,
-    author: post.data.author,
-    thumbnail: post.data.thumbnail,
-    permalink: post.data.permalink,
-    url: post.data.url
-  }));
-
-  console.log(json);
-});
-*/
