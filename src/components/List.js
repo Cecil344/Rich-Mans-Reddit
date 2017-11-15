@@ -10,10 +10,10 @@ class List extends Component {
             <article>
                 <section>
 
-                        {/* <h3> {this.props.post.title}</h3> */}
-                        {/* <img src={this.props.post.thumbnail} /> */}
-                        {/* <a href={this.props.post.url}>Click here</a> */}
-                        <p>Hi</p>
+                        <h3> {this.props.posts.title}</h3>
+
+                        <img src={this.props.posts.thumbnail} />
+                        <a href={this.props.posts.url}>Click here</a>
                 </section>
             </article>
         );

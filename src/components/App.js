@@ -39,7 +39,6 @@ class App extends Component {
               <Link to="/List">List View</Link></h2>
         </header>
         <List />
-
       <div>
         <Switch>
           <Route path = "/Grid" render= {() => (
@@ -47,14 +46,11 @@ class App extends Component {
                 {postGridItems}
               </div>
           )}/>
-
           <Route path = "/List" render ={() => (
               <div className = "list">
                 {postListItems}
               </div>
           )}/>
-
-
           <Redirect to="/" />
         </Switch>
       </div>
@@ -63,11 +59,9 @@ class App extends Component {
     );
   }
 }
-
 function mapStateToProps(state) {
     return {
         posts: state.posts
     }
 }
-
 export default connect(mapStateToProps)(App);
